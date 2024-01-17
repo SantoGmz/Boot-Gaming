@@ -1,7 +1,9 @@
 import pyautogui
 import time
 
-time.sleep(5)  # Espera 5 segundos antes de buscar la imagen
+time.sleep(1)  # Espera 5 segundos antes de buscar la imagen
+
+#es bueno saber que si la imagen cambia de tamaño podria afectar el programa
 try:
     boton2 = pyautogui.locateOnScreen('btn-2.png')
     if boton2 is not None:
