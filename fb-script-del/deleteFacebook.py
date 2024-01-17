@@ -2,7 +2,7 @@
 import pyautogui 
 import time
 
-time.sleep(3)
+time.sleep(2)
 
 
 try:
@@ -16,8 +16,10 @@ except  Exception as e:
     
     
 pyautogui.click('fb-btn-option.png')
-
-    
+time.sleep(1)
+pyautogui.click('fb-btn-trash.png')
+time.sleep(1)
+pyautogui.click('fb-btn-move.png')
     
     
     
