@@ -13,21 +13,20 @@ while keyboard.is_pressed('q') == False:
    
 print("DONE!")   
 
-
-time.sleep(2)
-pyautogui.typewrite("hello")
-pyautogui.press('Enter')
 '''
 i = 0
 
-msg = input("Escribe el mensaje: --> ")
+msg = input("Escribe el mensaje que quieres enviar: --> ")
 numOfmsg = input("¿Cuantas veces sera enviado el mensaje?--> ")
 print(f'el mensaje sera enviado {numOfmsg} veces')
 
+
 time.sleep(3)
-while i < int(numOfmsg):
-    pyautogui.typewrite("hola")
-    pyautogui.press('Enter')
-    time.sleep(0.3) #si pongo menos de 0.3 se pone loco, no entiendo porque aun, REVISAR LUEGO.
-    i = i+1
+while keyboard.is_pressed('q') == False:
     
+    while i < int(numOfmsg):
+        pyautogui.typewrite(msg)
+        pyautogui.press('Enter')
+        time.sleep(0.3) 
+        i = i+1
+        
