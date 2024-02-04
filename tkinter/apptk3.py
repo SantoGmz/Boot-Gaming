@@ -9,9 +9,15 @@ boton.pack()
 
 
 def botonPresionado():
-    texto = tk.Label(ventana, text="hola")
-    texto.pack()
+    textoImp = tk.Label(ventana)
+    textoImp.config(text=entrada.get())
+    textoImp.pack()
+
     
+
+entrada = tk.Entry(ventana)   
+entrada.insert(0, "Nombre") 
+entrada.pack()    
 boton.config(command=botonPresionado)
 ventana.mainloop()
 
