@@ -12,13 +12,8 @@ def generar_password(longitud): #esta funcion se encargar de crear la password
     password = "" #he tenido que creear la variable aqui porque no me dejaba crearla abajo
     for i in range(longitud): #el bucle dara vueltas por todos lados hasta los numeros que halla proporcionado el usuario
         password += random.choice(caracteres) #esta linea me dio demasiados problemas, aun no entiendo como lo resolvi pero lo importante es que funciona
-    print(f"Te recomiendo usar: {password} como password")  
+    print(password)  
     
     
 #hay que llamar la funcion y pasarle los valores          
-  
-
-
-longitud = input("De cuantos digitos quieres tu password?--> : ")
-
-generar_password(int(longitud))  
+generar_password(8)    
