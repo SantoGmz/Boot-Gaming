@@ -7,6 +7,7 @@ import pyautogui #importing the boot
 
 '''
 
+
 while keyboard.is_pressed('q') == False:
    print("hola")
    time.sleep(1)
