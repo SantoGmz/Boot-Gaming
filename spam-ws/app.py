@@ -7,6 +7,8 @@ import pyautogui #importing the boot
 
 '''
 
+2
+2
 
 while keyboard.is_pressed('q') == False:
    print("hola")
