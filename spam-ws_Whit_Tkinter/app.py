@@ -9,13 +9,20 @@ ventana.geometry("200x250")
 ventana.resizable(False, False)#esto es para que no cambie el tamano nunca
 
 
+def btn_click(msg):
+    mensaje = msg.get()
+    print(mensaje)
+    
+
+
 Label(ventana, text="Mensaje").grid(pady=0, padx=0, row=0, column=0)
 Label(ventana, text="veces").grid(row=2,column=0)
 
 
-Entry(ventana, width=30).grid(padx=5, row=1, column=0)
-Entry(ventana, width=3).grid(row=3, column=0)
+msg = Entry(ventana, width=30).grid(padx=5, row=1, column=0)
+numOfmsg = Entry(ventana, width=3).grid(row=3, column=0)
 
+Button(ventana, text="iniciar", command=lambda: btn_click(msg), width=15).grid(row=4, column=0, pady=5)
 
 
 
