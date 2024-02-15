@@ -1,14 +1,55 @@
 import keyboard #importing the keyboard
 import time #importing the mouse
 import pyautogui #importing the boot
-import tkinter as tk
+from tkinter import *
 
-ventana = tk.Tk()
+ventana = Tk()
 ventana.title("WhatsApp Spammer by GmzSan")
-ventana.geometry("350x350")
+ventana.geometry("200x250")
+ventana.resizable(False, False)#esto es para que no cambie el tamano nunca
 
-titulo1 = Label(ventana,text="xD")
-titulo1.pack()
+
+Label(ventana, text="Mensaje").grid(pady=0, padx=0, row=0, column=0)
+Label(ventana, text="veces").grid(row=2,column=0)
+
+
+Entry(ventana, width=30).grid(padx=5, row=1, column=0)
+Entry(ventana, width=3).grid(row=3, column=0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''
 
@@ -40,4 +81,4 @@ while keyboard.is_pressed('q') == False:
 '''
 
 
-tk.mainloop()        
+ventana.mainloop()        
