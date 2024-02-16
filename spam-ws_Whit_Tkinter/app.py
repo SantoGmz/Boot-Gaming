@@ -1,43 +1,48 @@
-import keyboard #importing the keyboard
-import time #importing the mouse
-import pyautogui #importing the boot
 import tkinter as tk
 
 ventana = tk.Tk()
 ventana.title("WhatsApp Spammer by GmzSan")
-ventana.geometry("350x350")
+ventana.geometry("150x200")
+ventana.resizable(False, False)#esto es para que no cambie el tamano nunca
+#funciones
+def on_click():
+    nuevo = entrada.get()
 
-titulo1 = Label(ventana,text="xD")
-titulo1.pack()
-
-'''
-
-2
-2
-
-while keyboard.is_pressed('q') == False:
-   print("hola")
-   time.sleep(1)
-   
-print("DONE!")   
+    print("Escribiste--> ", nuevo)
 
 
-i = 0
 
-msg = input("Escribe el mensaje que quieres enviar: --> ")
-numOfmsg = input("¿Cuantas veces sera enviado el mensaje?--> ")
-print(f'el mensaje sera enviado {numOfmsg} veces')
-
-
-time.sleep(3)
-while keyboard.is_pressed('q') == False:
-    
-    while i < int(numOfmsg):
-        pyautogui.typewrite(msg)
-        pyautogui.press('Enter')
-        time.sleep(0.3) 
-        i = i+1
-'''
+entrada = tk.Entry(ventana)
+entrada.grid(column=0, row=1)
+entrada.pack()
 
 
-tk.mainloop()        
+
+boton = tk.Button(text="ejecutar", command=on_click)
+boton.pack()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ventana.mainloop()        
