@@ -27,7 +27,7 @@ def on_click():
         print("No tiene numeros")
     else:
         print("Escribiste -->", msg)
-        print("Número de mensajes a enviar -->", numOfmsg)
+        print("Número de mensajes que se van a enviar -->", numOfmsg)
         time.sleep(3)
         while i < int(numOfmsg):
             pyautogui.typewrite(msg)
@@ -35,7 +35,7 @@ def on_click():
             time.sleep(0.3)
             i += 1
             
-#\\\\\\\\\\\\\\\\\\\\\\\\\\\\empieza el codigo/////////////////////////////////////////
+#\\\\\\\\\\\\\\\\\\\\\\\\\\\\empieza el codigo de imagenes/////////////////////////////////////////
 try:
     def cargar_imagen(ruta):
         imagen = PhotoImage(file=ruta)
