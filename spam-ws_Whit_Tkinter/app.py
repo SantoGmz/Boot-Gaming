@@ -36,6 +36,10 @@ def on_click():
             i += 1
             
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\empieza el codigo de imagenes/////////////////////////////////////////
+
+'''
+
+///////////////////////////aqui la imagen////////////////////////////
 try:
     def cargar_imagen(ruta):
         imagen = PhotoImage(file=ruta)
@@ -52,7 +56,7 @@ try:
 except Exception as e:
     print(f"---> {e}")
 
-
+'''
 
 
 entrada = tk.Entry(ventana)
